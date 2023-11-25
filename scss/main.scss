@@ -1,0 +1,45 @@
+@use "pages" as *;
+@use "themes" as *;
+@use "base" as *;
+@use "components" as *;
+@use "layout" as *;
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 103px;
+  position: relative;
+}
+
+@media only screen and (max-width: 888px) {
+  body {
+    padding-top: 76px;
+  }
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}

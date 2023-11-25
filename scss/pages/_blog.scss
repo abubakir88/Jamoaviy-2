@@ -1,0 +1,63 @@
+@use "../layout/header" as *;
+@use "../themes/fonts" as *;
+@use "../layout/footer";
+
+body {
+  padding-top: 120px;
+
+  .blog {
+    .blog-cards {
+      .blog-card {
+        h1 {
+          width: 949px;
+          color: var(--Dark-blue, #282938);
+          text-align: center;
+          /* Heading 2 */
+          font-family: Poppins;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 64px; /* 133.333% */
+        }
+        p {
+          color: var(--Dark-blue, #282938);
+          text-align: center;
+          /* Label 2 */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 175% */
+        }
+        img {
+          width: 1280px;
+          height: 477px;
+          flex-shrink: 0;
+        }
+        .p2 {
+          width: 831px;
+          color: var(--Dark-blue, #282938);
+          text-align: center;
+          /* Body 1 */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          opacity: 0.7;
+        }
+        a {
+          color: var(--Royal-Blue, #2405f2);
+          text-align: center;
+          /* Body 1 */
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

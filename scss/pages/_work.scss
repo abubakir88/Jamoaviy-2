@@ -1,0 +1,365 @@
+@use "../layout/header" as *;
+@use "../themes/fonts" as *;
+@use "../layout/footer";
+
+.hero-section {
+  height: 416px;
+  flex-shrink: 0;
+  background: var(--Grey, #f4f6fc);
+  padding-top: 96px;
+}
+.p {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+
+  /* Body 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+.h {
+  max-width: 504px;
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  position: relative;
+  margin: auto;
+}
+.p1 {
+  max-width: 735px;
+  color: var(--Dark-blue, #282938);
+  /* Body 2 */
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  position: relative;
+  margin: auto;
+  opacity: 0.7;
+}
+.icons {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.second-section {
+  padding: 128px 0;
+}
+
+.tepa {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  top: 96px;
+  cursor: pointer;
+}
+
+.p2 {
+  color: var(--Royal-Blue, #2405f2);
+
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  opacity: 0.7;
+}
+.p3 {
+  color: var(--Dark-blue, #282938);
+
+  /* Label 01 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+.p2:hover {
+  color: #282938;
+  transition: 0.9s;
+}
+.p3:hover {
+  color: #2405f2;
+  transition: 0.9s;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+.card1 {
+  position: relative;
+  top: 200px;
+}
+.i {
+  max-width: 545px;
+  height: 317px;
+  margin: 0;
+  flex-shrink: 0;
+  max-width: 623px;
+
+  padding: 30px 39px 33px 39px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(131deg, #f4ede1 16.74%, #98b1c6 103.17%);
+  img {
+    width: 100%;
+  }
+}
+.h1 {
+  color: var(--Dark-blue, #282938);
+
+  /* Heading 3 */
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 147.368% */
+  position: relative;
+  top: 24px;
+}
+.p4 {
+  max-width: 623px;
+  color: var(--Dark-blue, #282938);
+  text-align: justify;
+
+  /* Body 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+}
+.p5 {
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  position: relative;
+  top: -5px;
+  cursor: pointer;
+}
+.strelka {
+  display: flex;
+  gap: 16px;
+}
+.p5:hover {
+  color: rgb(148, 146, 146);
+  transition: 0.8s;
+}
+.card2 {
+  position: relative;
+  top: 200px;
+}
+.i2 {
+  max-width: 545px;
+  height: 317px;
+  flex-shrink: 0;
+  display: flex;
+  max-width: 623px;
+  padding: 30px 39px 33px 39px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(131deg, #ffd3af 16.74%, #4f56ff 103.17%);
+  img {
+    width: 100%;
+  }
+}
+.card3 {
+  position: relative;
+  top: 230px;
+}
+.i3 {
+  max-width: 545px;
+  height: 317px;
+  flex-shrink: 0;
+  display: flex;
+  max-width: 623px;
+  padding: 30px 39px 33px 39px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(131deg, #eebca7 16.74%, #c8c8c8 103.17%);
+  img {
+    width: 100%;
+  }
+}
+
+.card4 {
+  position: relative;
+  top: 230px;
+}
+.i4 {
+  max-width: 545px;
+  height: 317px;
+  flex-shrink: 0;
+  display: flex;
+  max-width: 623px;
+  padding: 30px 39px 33px 39px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(131deg, #c2e7f2 16.74%, #98a4ff 103.17%);
+  img {
+    width: 100%;
+  }
+}
+
+.card5 {
+  position: relative;
+  top: 240px;
+}
+.i5 {
+  max-width: 545px;
+  height: 317px;
+  flex-shrink: 0;
+  background: linear-gradient(131deg, #c5bcff 16.74%, #9bf6d5 103.17%);
+  display: flex;
+  max-width: 623px;
+  padding: 30px 39px 33px 39px;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+.card6 {
+  position: relative;
+  top: 240px;
+}
+.i6 {
+  max-width: 545px;
+  height: 317px;
+  flex-shrink: 0;
+  display: flex;
+  max-width: 623px;
+  padding: 30px 39px 33px 39px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(131deg, #d2d6fd 16.74%, #d6acea 103.17%);
+
+  img {
+    width: 100%;
+  }
+}
+
+.third-section {
+  padding: 128px 0;
+}
+
+.h2 {
+  max-width: 730px;
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  position: relative;
+  margin: auto;
+}
+.p6 {
+  max-width: 560px;
+  color: var(--Dark-blue, #282938);
+  font-family: Poppins;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.7;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.but1 {
+  color: #1b1c2b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  border-radius: 41px;
+  background: #fcd980;
+  display: flex;
+  max-width: 230px;
+  height: 64px;
+  padding: 16px 67px 16px 66px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+.but1:hover {
+  background-color: rgb(252, 186, 3);
+  transition: 0.9s;
+}
+.s1:hover {
+  background: gray;
+  border-radius: 50%;
+  transition: 1s;
+}
+.s2:hover {
+  background: gray;
+  border-radius: 35%;
+  transition: 0.9s;
+}
+.s3:hover {
+  background: gray;
+  border-radius: 35%;
+  transition: 0.9s;
+}
+.s4:hover {
+  background: gray;
+  border-radius: 30%;
+  transition: 0.9s;
+}
+@media only screen and (max-width: 1319px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .icons {
+    position: relative;
+    left: -0px;
+  }
+  .p {
+    position: relative;
+    left: -10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .p {
+    position: relative;
+    top: -70px;
+    left: 8px;
+  }
+
+  .icons {
+    position: relative;
+    top: -70px;
+  }
+}

@@ -1,0 +1,109 @@
+@use "../themes/varibales" as *;
+@use "../themes/fonts" as *;
+@use "../base/media" as *;
+
+header {
+  background: $color-five;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.5);
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    .menu {
+      display: none;
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    &-items {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    &-item {
+      color: #bbbbcb;
+
+      /* Body 2 */
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 175% */
+      transition: 0.5s;
+    }
+    &-item:hover {
+      color: #fff;
+    }
+    &-item:nth-child(6) {
+      border-radius: 41px;
+      border: 2px solid rgba(244, 246, 252, 0.2);
+      padding: 16px 48px;
+    }
+  }
+  @media only screen and (max-width: 888px) {
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .menu {
+        display: block;
+      }
+    }
+    .nav-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 25px;
+      position: fixed;
+      top: 75px;
+      right: -100%;
+      width: 100%;
+      height: calc(80vh - 70px);
+      background: #fff;
+      opacity: 0.95;
+      padding: 60px 0;
+      transition: all 0.3s ease-in-out;
+      z-index: 100;
+    }
+  }
+}
+
+.open {
+  @media only screen and (max-width: 888px) {
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .menu {
+        display: block;
+      }
+    }
+    .nav-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 25px;
+      position: fixed;
+      top: 75px;
+      right: 0%;
+      width: 100%;
+      height: calc(80vh - 50px);
+      background: $color-five;
+      opacity: 0.95;
+      padding: 60px 0;
+      transition: all 0.3s ease-in-out;
+      z-index: 100;
+    }
+  }
+}
